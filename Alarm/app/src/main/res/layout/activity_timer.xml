@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Timer">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="334dp"
+        android:layout_height="309dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:progress="60" />
+
+    <EditText
+        android:id="@+id/miedit_text_input"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:hint="Minutes"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <Button
+        android:id="@+id/button_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/miedit_text_input"
+        android:layout_toEndOf="@+id/miedit_text_input"
+        android:text="Set"
+        app:layout_constraintBottom_toBottomOf="@+id/start_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/start_pause"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="201dp"
+        android:layout_height="61dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="00:00:00"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/start_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:text="start"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.824" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_toEndOf="@+id/start_pause"
+        android:text="reset"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/start_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/start_pause"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/Alarm_But"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm"
+        app:layout_constraintBottom_toBottomOf="@+id/StopWatch_But"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/StopWatch_But"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Clock_But"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="216dp"
+        android:text="@string/clock"
+        app:layout_constraintBottom_toBottomOf="@+id/StopWatch_But"
+        app:layout_constraintEnd_toEndOf="@+id/StopWatch_But"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/StopWatch_But"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Timer_But"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer"
+        app:layout_constraintBottom_toBottomOf="@+id/StopWatch_But"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.622"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/StopWatch_But"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/StopWatch_But"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stopwatch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Logout_But"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
+        android:text="@string/logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/HeditTextTextPersonName"
+        android:layout_width="114dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="hours"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toBottomOf="@+id/miedit_text_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/miedit_text_input"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/SeditTextTextPersonName2"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="seconds"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintBottom_toBottomOf="@+id/miedit_text_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/miedit_text_input"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

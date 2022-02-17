@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmsActivity">
+
+    <Button
+        android:id="@+id/Alarm_But"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Clock_But"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Clock_But"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Timer_But"
+        app:layout_constraintStart_toEndOf="@+id/Alarm_But"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Timer_But"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="@string/timer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/StopWatch_But"
+        app:layout_constraintStart_toEndOf="@+id/Clock_But"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/StopWatch_But"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stopwatch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Timer_But"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Logout_But"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:text="@string/logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <ListView
+        android:id="@+id/alarmsList"
+        android:layout_width="358dp"
+        android:layout_height="473dp"
+        android:layout_marginBottom="20dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/Timer_But"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addAlarmBtn" />
+
+    <ImageButton
+        android:id="@+id/addAlarmBtn"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:alpha="1"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

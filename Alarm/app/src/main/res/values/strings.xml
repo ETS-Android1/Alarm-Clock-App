@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Alarm</string>
+    <string name="btn_SignIN">Sign in</string>
+    <string name="btn_Register">Register</string>
+    <string name="et_UsernameHint">Username</string>
+    <string name="et_PasswordHint">Password</string>
+    <string name="alarm">Alarm</string>
+    <string name="clock">Clock</string>
+    <string name="timer">Timer</string>
+    <string name="logout">Logout</string>
+    <string name="stopwatch">StopWatch</string>
+</resources>

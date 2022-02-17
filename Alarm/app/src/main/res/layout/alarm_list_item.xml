@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Switch
+        android:id="@+id/enableSwitch"
+        android:layout_width="82dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="11dp"
+        android:layout_toEndOf="@+id/timeText"
+        android:layout_toRightOf="@+id/buttonDelete"
+        android:paddingBottom="10dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="23:23"
+        android:textSize="36dp" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/timeText"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/timeText"
+        android:layout_toRightOf="@+id/timeText"
+        android:background="#EFE9E9"
+        android:text="Delete" />
+
+
+</RelativeLayout>
